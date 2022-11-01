@@ -18,80 +18,80 @@
       >
         <fieldset class="legends_input">
           <legend>Personal information</legend>
+        
+          <div class="inputs_form">
+            <label>
+              Surname:
+              <input
+                type="text"
+                name="surname"
+                minlength="2"
+                maxlength="25"
+                required
+              >
+            </label>
+          </div>
 
-          <label>
-            Surname:
-            <input
-              type="text"
-              name="surname"
-              class="inputs_form"
-              minlength="2"
-              maxlength="25"
-              required
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              Name:
+              <input
+                type="text"
+                name="name"
+                minlength="2"
+                maxlength="25"
+                required
+              >
+            </label>
+          </div>
 
-          <label>
-            Name:
-            <input
-              type="text"
-              name="name"
-              class="inputs_form"
-              minlength="2"
-              maxlength="25"
-              required
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              How old are You?
+              <input
+                type="number"
+                min="1"
+                max="100"
+                name="how_old"
+                value="12"
+              >
+            </label>
+          </div>
 
-          <label>
-            How old are You?
-            <input
-              type="number"
-              min="1"
-              max="100"
-              name="how_old"
-              value="12"
-              class="inputs_form"
-            >
-            <br>
-          </label>
-
-          <label>
-            Full date of birth:
-            <input 
-              type="date" 
-              name="birth" 
-              class="inputs_form"
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              Full date of birth:
+              <input 
+                type="date" 
+                name="birth" 
+              >
+            </label>
+          </div>
 
           <label>
             I accept the term of the agreement
-            <input 
+            <input
               type="checkbox"
               name="term"
             >
-            <br>
           </label>
+
         </fieldset>
 
         <fieldset class="legends_input">
           <legend>Registration</legend>
 
-          <label>
-            E-mail:
-            <input
-              type="email"
-              name="email"
-              required
-              placeholder="email@example.com"
-              class="inputs_form"
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              E-mail:
+              <input
+                type="email"
+                name="email"
+                required
+                placeholder="email@example.com"
+              >
+            </label>
+          </div>
 
           <label>
             Password:
@@ -100,8 +100,8 @@
               name="password"
               autocomplete="off"
             >
-            <br>
           </label>
+
         </fieldset>
 
         <fieldset class="legends_input">
@@ -127,33 +127,34 @@
             <br>
           </label>
 
-          <label>
-            What is your favorite color?
-            <input
-              type="color"
-              name="color"
-              class="inputs_form_top"
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              What is your favorite color?
+              <input
+                type="color"
+                name="color"
+                class="inputs_form_top"
+              >
+              <br>
+            </label>
+          </div>
 
-          <label>
-            What time do you go to bed?
-            <input 
-              type="time" 
-              name="time"
-              step="2"
-              class="inputs_form_top"
-            >
-            <br>
-          </label>
+          <div class="inputs_form">
+            <label>
+              What time do you go to bed?
+              <input
+                type="time"
+                name="time"
+                step="2"
+              >
+            </label>
+          </div>
 
           <label>
             What are your favorite brand of cars?
             <select
               name="car"
               multiple
-              class="inputs_form_top"
             >
               <option value="BMW">BMW</option>
               <option value="Audi">Audi</option>
@@ -170,14 +171,14 @@
               value="0"
               class="inputs_form_top2"
             >
-            <br>
           </label>
+
         </fieldset>
 
         <fieldset class="legends_input">
           <legend>Additional info:</legend>
 
-          <label class="inputs_form">
+          <label>
             Comments:
             <textarea
               name="addinfo" 
@@ -187,25 +188,25 @@
             <br>
           </label>
 
-          <label>
-            Would you recommend us?
-            <select 
-              name="recommend"
-              class="inputs_form_top"
-            >
-              <option value="Y">yes</option>
-              <option value="N">no</option>
-            </select>
-            <br>
-          </label>
+          <div class="inputs_form_top">
+            <label>
+              Would you recommend us?
+              <select name="recommend">
+                <option value="Y">yes</option>
+                <option value="N">no</option>
+              </select>
+            </label>
+          </div>
         </fieldset>
 
-        <button 
-          type="submit" 
-          class="inputs_form"
-        >
-        Submit
-        </button>
+        <div class="inputs_form">
+          <button
+            type="submit" 
+            class="inputs_form"
+          >
+          Submit
+          </button>
+        </div>
     
       </form>
     </div>
